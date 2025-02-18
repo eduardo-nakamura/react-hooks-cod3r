@@ -25,7 +25,7 @@ const UseCallback = () => {
                 <p>{`}, [setCount])`}</p>
             </div>
             <div className="bg">
-                <p>{`Componente filho`}</p>
+                <p>{`Criado um Componente filho UseCallbackButtons com os botões`}</p>
                 <p>{`export default React.memo(UseCallbackButtons)`}</p>
             </div>
             <div className="center">
