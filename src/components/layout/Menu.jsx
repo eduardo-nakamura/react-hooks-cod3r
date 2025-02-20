@@ -8,31 +8,31 @@ const Menu = props => (
         <nav>
             <ul>
                 <li>
-                    <Link to="/">Início</Link>
+                    <Link to="/react-hooks-cod3r/">Início</Link>
                 </li>
                 <li>
-                    <Link to="/useState">useState()</Link>
+                    <Link to="/react-hooks-cod3r/useState">useState()</Link>
                 </li>
                 <li>
-                    <Link to="/useEffect">useEffect()</Link>
+                    <Link to="/react-hooks-cod3r/useEffect">useEffect()</Link>
                 </li>
                 <li>
-                    <Link to="/useRef">useRef()</Link>
+                    <Link to="/react-hooks-cod3r/useRef">useRef()</Link>
                 </li>
                 <li>
-                    <Link to="/useMemo">useMemo()</Link>
+                    <Link to="/react-hooks-cod3r/useMemo">useMemo()</Link>
                 </li>
                 <li>
-                    <Link to="/useCallback">useCallback()</Link>
+                    <Link to="/react-hooks-cod3r/useCallback">useCallback()</Link>
                 </li>
                 <li>
-                    <Link to="/useContext">useContext()</Link>
+                    <Link to="/react-hooks-cod3r/useContext">useContext()</Link>
                 </li>
                 <li>
-                    <Link to="/useReducer">useReducer()</Link>
+                    <Link to="/react-hooks-cod3r/useReducer">useReducer()</Link>
                 </li>
                 <li>
-                    <Link to="/useCustom">useMyHook()</Link>
+                    <Link to="/react-hooks-cod3r/useCustom">useMyHook()</Link>
                 </li>
             </ul>
         </nav>
