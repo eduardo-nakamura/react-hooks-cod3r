@@ -1,9 +1,8 @@
 import './Menu.css'
-import React from 'react'
 
 import { Link } from 'react-router-dom'
 
-const Menu = props => (
+const Menu = () => (
     <aside className="Menu">
         <nav>
             <ul>
