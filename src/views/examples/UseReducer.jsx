@@ -2,35 +2,8 @@ import { useReducer, useState } from 'react';
 import PageTitle from '../../components/layout/PageTitle'
 import SectionTitle from '../../components/layout/SectionTitle';
 
-const initialState = {
-    cart: [],
-    products: [],
-    user: null,
-    other: 'other',
-    number: 0
-}
-//Math.floor(currentState.number / 25);
-function reducer(currentState, action) {
-    switch (action.type) {
-        case 'add2ToNum':
-            return { ...currentState, number: currentState.number + 2 }
-        case 'multiply7':
-            return { ...currentState, number: currentState.number * 7 }
-        case 'divide25':
-            return { ...currentState, number: Math.floor(currentState.number / 25) }
-        case 'addNToNum':
-            var numToAdd = Number(action.number); //
-            if (isNaN(numToAdd)) { 
-                return currentState; // Retorna o estado atual sem alterações
-            } else {
-                return { ...currentState, number: currentState.number + numToAdd };
-            }
-        case 'login':
-            return { ...currentState, user: { name: action.name } }
-        default:
-            return currentState;
-    }
-}
+import {initialState, reducer} from '../../store'
+import {add2ToNum, login} from  '../../store/actions'
 
 const UseReducer = () => {
     const [state, dispatch] = useReducer(reducer, initialState) // Cria o State a partir do Initia
@@ -58,8 +31,8 @@ const UseReducer = () => {
 
                 <span className="text">{state.number}</span>
                 <div>
-                    <button onClick={() => dispatch({ type: 'add2ToNum' })} className="btn">+2</button>
-                    <button onClick={() => dispatch({ type: 'login', name: 'Maria' })} className="btn">Login Maria</button>
+                    <button onClick={() => add2ToNum(dispatch)} className="btn">+2</button>
+                    <button onClick={() => login(dispatch, 'john')} className="btn">Login john</button>
                 </div>
             </div>
 
